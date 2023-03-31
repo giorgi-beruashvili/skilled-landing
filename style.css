@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* colors */
+:root {
+    
+    --button-Mostly-desaturated-dark-blue: #666CA3;
+    --text-Very-dark-blue: #13183F;
+    --text-Dark-grayish-blue: #83869A;
+    --text-Bright-pink: #F74780;
+    --text-Pale-pink: #FFA7C3;
+    --white: #FFFFFF;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+}
+
+.header {
+    padding: 16px 16px 38px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-text {
+    color: var(--text-Very-dark-blue);
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 35px;
+    margin-top: 6px;
+}
+
+.header-btn {
+    background: var(--text-Very-dark-blue);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    border-radius: 28px;
+    width: 140px;
+    height: 48px;
+    color: var(--white);
+    border: none;
+}
+
+.budget-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 30px;
+    padding: 0 16px;
+}
+
+.card-header {
+    width: 100%;
+}
+
+.heading-primary {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    color: var(--text-Very-dark-blue);
+}
+
+.main-description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--text-Dark-grayish-blue);
+}
+
+.main-btn {
+    width: 167px;
+    height: 56px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 31.5px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--white);
+}
+
+.main-img-mobile {
+    max-width: 100%;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 16px 80px 16px;
+    justify-content: center;
+}
+
+.card-header {
+    height: 120px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 10px;
+}
+
+.card-heading {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--white);
+    padding: 24px 29px 32px 28px;
+}
+
+.card {
+    background-color: var(--white);
+    padding: 0 29px 32px 28px;
+    border-radius: 10px;
+}
+
+.icon {
+    margin-top: -25px;
+}
+
+.card-text-container {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.heading {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--text-Very-dark-blue);
+}
+
+.card-description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 8px;
+    color: var(--text-Dark-grayish-blue);
+}
+
+.card-btn {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--text-Bright-pink);
+    border: none;
+    width: 104px;
+    height: 28px;
+    background-color: var(--white);
+}
+
+.footer {
+    padding: 36px 16px;
+    background-color: var(--text-Very-dark-blue);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 35px;
+    color: var(--white);
+    margin-top: 7px;
+}
+
+.footer-btn {
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+    border-radius: 28px;
+    width: 148px;
+    height: 48px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url(./assets/image-hero-tablet.png);
+        background-repeat: no-repeat;
+        background-position: top -90px right -290px;
+    }
+
+    .header {
+        padding: 24px 40px 99px 39px;
+    }
+
+    .budget-container {
+        width: 398px;
+        margin-bottom: 186px;
+        padding: 0 40px 0 39px;
+    }
+
+    .main-img-mobile {
+        display: none;
+    }
+
+    .card-container {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        row-gap: 56px;
+        padding: 24px 40px 86px 39px;
+        background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    }
+
+    .card-header {
+        width: 339px;
+        height: 259px;
+    }
+
+    .card {
+        width: 339px;
+        height: 259px;
+        padding: 0 21px 32px 32px;
+    }
+
+    .card-heading {
+        padding: 56px 21px 139px 32px;
+    }
+
+    .footer {
+        padding: 36px 39px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-image: url(./assets/image-hero-desktop.png);
+        background-repeat: no-repeat;
+        background-position: top -140px right -330px;
+    }
+
+    .budget-container {
+        width: 720px;
+        margin-bottom: 226px;
+        padding: 0 165px;
+    }
+
+    .main-description {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .header {
+        padding: 24px 165px 172px 165px;
+    }
+
+    .header-text {
+        margin-top: 5px;
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .header-btn {
+        width: 167px;
+        height: 56px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .heading-primary {
+        font-size: 56px;
+        line-height: 71px;
+    }
+
+    .card-container {
+        padding: 24px 165px 140px 165px;
+        column-gap: 30px;
+        row-gap: 80px;
+    }
+
+    .card-header {
+        width: 350px;
+        height: 322px;
+    }
+
+    .card {
+        width: 350px;
+        height: 322px;
+        padding: 0 32px 40px 32px;
+    }
+
+    .card-text-container {
+        margin-top: 32px;
+        gap: 24px;
+    }
+
+    .card-text-container:nth-child(3) :hover {
+        color: var(--text-Pale-pink);
+        opacity: 0.5;
+    }
+
+    .heading {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .card-heading {
+        font-size: 32px;
+        line-height: 40px;
+        padding: 64px 32px 138px 32px;
+    }
+
+    .footer {
+        padding: 32px 165px;
+    }
+
+    .footer-text {
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .footer-btn {
+        width: 167px;
+        height: 56px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+}
